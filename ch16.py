@@ -32,8 +32,8 @@ st.title("Spleen Segmentation Visualization")
 
 #if uploaded_image and uploaded_segmentation:
 # Load image and segmentation using SimpleITK
-image = sitk.ReadImage("mri.nii.gz")
-segmentation = sitk.ReadImage("intervertebral_discs.nii.gz")
+image = sitk.ReadImage("Medical Decathlon Spleen/148/artifactFiles/imagesTr/spleen_10.nii.gz")
+segmentation = sitk.ReadImage("Medical Decathlon Spleen/148/artifactFiles/labelsTr/spleen_10.nii.gz")
 
 # Convert to numpy arrays for visualization
 image_np = sitk.GetArrayFromImage(image).T
